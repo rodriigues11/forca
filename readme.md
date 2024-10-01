@@ -13,7 +13,7 @@ Bem-vindo ao Jogo da Forca! Este é um jogo simples da forca em HTML, CSS e Java
 1. **Clone o Repositório**
 
    ```bash
-   git clone https://github.com/rodriigues03/forca.git
+   git clone https://github.com/rodriigues11/forca.git
    ```
 
 2. **Navegue até o Diretório do Projeto**
