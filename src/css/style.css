@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url('../img/dark.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  width: 90%; 
+  max-width: 1000px; 
+  background: rgba(0, 0, 0, 0.5); 
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 15px; 
+  padding: 20px 30px; 
+  box-sizing: border-box; 
+  text-align: center; 
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.5em; 
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#pontos {
+  font-size: 1.5em; 
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+#palavra-container {
+  font-size: 2em;
+  letter-spacing: 10px; 
+  margin: 30px 0;
+  color: #ffffff;
+}
+
+.letra {
+  display: inline-block;
+  border-bottom: 3px solid #3498db;
+  width: 30px; 
+  padding-bottom: 8px; 
+  color: #ffffff;
+}
+
+#dica {
+  margin: 20px;
+  font-size: 1.2em; 
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+#letras {
+  margin: 20px 0; 
+}
+
+.letra-btn {
+  padding: 10px 15px; 
+  margin: 6px; 
+  font-size: 1.1em; 
+  cursor: pointer;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.letra-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.letra-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  color: #ecf0f1;
+}
+
+#forca {
+  font-size: 2em; 
+  color: #e74c3c;
+}
+
+#resultado {
+  font-size: 2em; 
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+#jogar-novamente {
+  margin: 20px; 
+}
+
+#jogar-novamente button {
+  padding: 10px 20px; 
+  font-size: 1.1em; 
+  cursor: pointer;
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#jogar-novamente button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  #pontos {
+    font-size: 1.3em;
+  }
+
+  #palavra-container {
+    font-size: 1.8em;
+    letter-spacing: 8px;
+  }
+
+  .letra {
+    width: 25px;
+    padding-bottom: 6px;
+  }
+
+  #dica {
+    font-size: 1em;
+  }
+
+  #letras {
+    margin: 15px 0;
+  }
+
+  .letra-btn {
+    padding: 8px 12px;
+    font-size: 1em;
+    margin: 5px;
+  }
+
+  #forca {
+    font-size: 1.8em;
+  }
+
+  #resultado {
+    font-size: 1.8em;
+  }
+
+  #jogar-novamente button {
+    padding: 8px 15px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #pontos {
+    font-size: 1.2em;
+  }
+
+  #palavra-container {
+    font-size: 1.5em;
+    letter-spacing: 5px;
+  }
+
+  .letra {
+    width: 20px;
+    padding-bottom: 5px;
+  }
+
+  #dica {
+    font-size: 0.9em;
+  }
+
+  #letras {
+    margin: 10px 0;
+  }
+
+  .letra-btn {
+    padding: 6px 10px;
+    font-size: 0.9em;
+    margin: 4px;
+  }
+
+  #forca {
+    font-size: 1.5em;
+  }
+
+  #resultado {
+    font-size: 1.5em;
+  }
+
+  #jogar-novamente button {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+}
